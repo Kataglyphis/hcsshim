@@ -1,5 +1,5 @@
 $ErrorActionPreference = "Stop"
-$now=get-date -Format("yyyyMMdd-HHmmss")
+$now=get-date -Format "yyyyMMdd-HHmmss"
 $outputPath = join-path $env:TEMP "container-logs-$now"
 $containerdState = "c:\programdata\containerd\state"
 mkdir $outputPath | Out-Null

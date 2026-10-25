@@ -1,0 +1,14 @@
+name: Windows x64 · PowerShell measurements
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  powershell:
+    uses: Kataglyphis/ANTfrastructure/.github/workflows/powershell-quality.yml@develop
+    with:
+      lint-path: scripts
+      analyzer-strict: false
+      strict: false
